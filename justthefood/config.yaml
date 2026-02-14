@@ -4,8 +4,8 @@ version: "1.1.0"
 slug: "justthefood"
 url: "https://github.com/D3L05/homeassistant-justthefood"
 
-# Pre-built container image (arch is replaced automatically)
-image: "ghcr.io/d3l05/justthefood-{arch}"
+# Pre-built container image (uncomment once CI publishes to GHCR)
+# image: "ghcr.io/d3l05/justthefood-{arch}"
 
 # Architecture support
 arch:
