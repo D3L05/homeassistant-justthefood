@@ -10,7 +10,7 @@ Home Assistant add-on repository for **JustTheFood** — a recipe manager with c
 
 ### [JustTheFood](./justthefood)
 
-![JustTheFood](./justthefood/icon.png)
+<img src="./justthefood/icon.png" alt="JustTheFood" width="100" />
 
 Paste any recipe URL → get a clean recipe → cook step-by-step with timers.
 
