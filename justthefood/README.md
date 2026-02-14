@@ -56,3 +56,6 @@ The addon will control this timer when you click timer buttons in recipes.
 
 - 🐛 [Report a bug](https://github.com/D3L05/homeassistant-justthefood/issues)
 - 💡 [Request a feature](https://github.com/D3L05/homeassistant-justthefood/issues)
+- ☕ Buy me a coffee:
+
+<a href='https://ko-fi.com/H2H01TYY2U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
