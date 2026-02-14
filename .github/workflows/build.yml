@@ -5,18 +5,15 @@ on:
     types: [published]
   workflow_dispatch:
 
-env:
-  BUILD_ARGS: "--test"
-
 jobs:
-  build:
-    name: Build add-on
+  publish:
+    name: Publish
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
     steps:
-      - name: Checkout repository
+      - name: Checkout the repository
         uses: actions/checkout@v4
 
       - name: Login to GitHub Container Registry
@@ -27,9 +24,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
-        uses: home-assistant/builder@master
+        uses: home-assistant/builder@2025.03.0
         with:
           args: |
-            --all
-            --target justthefood
+            --all \
+            --target justthefood \
             --docker-hub ghcr.io/d3l05
