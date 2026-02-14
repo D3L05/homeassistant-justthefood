@@ -24,10 +24,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
-        uses: home-assistant/builder@2025.03.0
+        uses: home-assistant/builder@2025.11.0
         with:
           args: |
-            --amd64 \
-            --aarch64 \
-            --target justthefood \
-            --docker-hub ghcr.io/d3l05
+            --amd64 --aarch64 --target justthefood --docker-hub ghcr.io/d3l05
