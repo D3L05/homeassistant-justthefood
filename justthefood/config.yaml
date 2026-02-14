@@ -11,7 +11,6 @@ image: "ghcr.io/d3l05/justthefood-{arch}"
 arch:
   - amd64
   - aarch64
-  - armv7
 
 # Enable web UI via HA sidebar
 ingress: true

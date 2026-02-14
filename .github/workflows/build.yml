@@ -27,6 +27,7 @@ jobs:
         uses: home-assistant/builder@2025.03.0
         with:
           args: |
-            --all \
+            --amd64 \
+            --aarch64 \
             --target justthefood \
             --docker-hub ghcr.io/d3l05
