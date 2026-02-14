@@ -1,0 +1,54 @@
+name: "JustTheFood"
+description: "Recipe manager with cooking mode and Home Assistant timers"
+version: "1.1.0"
+slug: "justthefood"
+url: "https://github.com/D3L05/homeassistant-justthefood"
+
+# Pre-built container image (arch is replaced automatically)
+image: "ghcr.io/d3l05/justthefood-{arch}"
+
+# Architecture support
+arch:
+  - amd64
+  - aarch64
+  - armv7
+
+# Enable web UI via HA sidebar
+ingress: true
+ingress_port: 3000
+panel_icon: "mdi:chef-hat"
+panel_title: "Recipes"
+
+# Required permissions
+homeassistant_api: true
+
+# Persistent data
+map:
+  - data:rw
+
+# User-configurable options
+options:
+  timer_mode: "home_assistant"
+  timer_entity: "timer.cooking_timer"
+  notification_service: ""
+  tts_enabled: false
+  tts_service: "tts.google_translate_say"
+  tts_entity: ""
+  ai_enabled: false
+  ai_provider: "openai"
+  ai_api_key: ""
+  ai_base_url: ""
+  ai_model: ""
+
+schema:
+  timer_mode: list(home_assistant|built_in)
+  timer_entity: str?
+  notification_service: str?
+  tts_enabled: bool
+  tts_service: str?
+  tts_entity: str?
+  ai_enabled: bool
+  ai_provider: list(openai|gemini|claude)?
+  ai_api_key: password?
+  ai_base_url: str?
+  ai_model: str?
